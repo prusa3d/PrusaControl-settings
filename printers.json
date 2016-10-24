@@ -18,7 +18,7 @@
         210,
         200
       ],
-      "material_parameters_file": "data/materials_i3_mk2.json",
+      "material_parameters_file": "materials_i3_mk2.json",
       "parameters": {
         "retract_lift": 0.15
       }
