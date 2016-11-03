@@ -47,7 +47,7 @@
           }
         },
         "normal": {
-          "first": 0,
+          "first": 1,
           "sort": 3,
           "name": "normal",
           "label": "Normal",
@@ -343,7 +343,7 @@
           }
         },
         "normal": {
-          "first": 0,
+          "first": 1,
           "sort": 3,
           "name": "normal",
           "label": "Normal",
@@ -497,7 +497,7 @@
       ],
       "quality": {
         "draft": {
-          "first": 0,
+          "first": 1,
           "sort": 4,
           "name": "draft",
           "label": "Draft",
@@ -641,7 +641,7 @@
       ],
       "quality": {
         "normal": {
-          "first": 0,
+          "first": 1,
           "sort": 4,
           "name": "normal",
           "label": "Normal",
