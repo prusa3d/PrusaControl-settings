@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 1.1
+    "version": 1.3
   },
   "printers": {
     "i3_mk2": {
@@ -20,7 +20,7 @@
       ],
       "material_parameters_file": "materials_i3_mk2.json",
       "parameters": {
-        "retract_lift": 0.15
+        "retract_lift": 0.8
       }
     },
     "default": {
@@ -54,7 +54,7 @@
         "retract_layer_change": 1,
         "retract_length": 0.8,
         "retract_length_toolchange": 3,
-        "retract_lift": 0.15,
+        "retract_lift": 0.8,
         "retract_lift_above": 1,
         "retract_lift_below": 199,
         "retract_restart_extra": 0,
