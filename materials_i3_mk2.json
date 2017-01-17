@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 1.7
+    "version": 1.8
   },
   "materials": {
     "abs": {
@@ -136,8 +136,7 @@
             "perimeter_acceleration" : 400,
             "bridge_acceleration": 500,
             "first_layer_acceleration" : 500,
-            "infill_acceleration" : 500,
-            "support_material_contact_distance" : 0.15
+            "infill_acceleration" : 500
           }
         },
         "detail": {
@@ -273,7 +272,6 @@
             "support_material" : 0,
             "support_material_angle" : 0,
             "support_material_buildplate_only" : 0,
-            "support_material_contact_distance" : 0.2,
             "support_material_enforce_layers" : 0,
             "support_material_extruder" : 1,
             "support_material_extrusion_width" : 0.35,
@@ -312,7 +310,7 @@
       "sort": 3,
       "name": "pet",
       "label": "Prusa PET",
-      "infill": 25,
+      "infill": 20,
       "infillRange": [
         0,
         80
@@ -557,7 +555,7 @@
             "support_material" : 0,
             "support_material_angle" : 0,
             "support_material_buildplate_only" : 0,
-            "support_material_contact_distance" : 0.2,
+            "support_material_contact_distance" : 0.1,
             "support_material_enforce_layers" : 0,
             "support_material_extruder" : 1,
             "support_material_extrusion_width" : 0.35,
