@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 1.8
+    "version": 1.9
   },
   "materials": {
     "abs": {
@@ -237,7 +237,7 @@
             "min_print_speed": 15,
             "bridge_speed": 20,
             "max_volumetric_speed" : 0,
-            "gcode_comments" : 0,
+            "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
             "infill_first" : 0,
@@ -520,7 +520,7 @@
             "min_print_speed": 15,
             "bridge_speed": 20,
             "max_volumetric_speed" : 0,
-            "gcode_comments" : 0,
+            "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
             "infill_first" : 0,
@@ -555,7 +555,7 @@
             "support_material" : 0,
             "support_material_angle" : 0,
             "support_material_buildplate_only" : 0,
-            "support_material_contact_distance" : 0.1,
+            "support_material_contact_distance" : 0.05,
             "support_material_enforce_layers" : 0,
             "support_material_extruder" : 1,
             "support_material_extrusion_width" : 0.35,
