@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 2.0
+    "version": 2.1
   },
   "printers": {
     "i3_mk2": {
@@ -13,6 +13,7 @@
         0.0
       ],
       "texture": "data/img/PrintBed04.png",
+      "texture_from_below": "data/img/PrintBed04_GRID.png",
       "printing_space": [
         250,
         210,
@@ -35,6 +36,7 @@
         0.0
       ],
       "texture": "data/img/PrintBed04.png",
+      "texture_from_below": "data/img/PrintBed04_GRID.png",
       "printing_space": [
         250,
         210,
@@ -57,6 +59,7 @@
         0.0
       ],
       "texture": "data/img/PrintBed04.png",
+      "texture_from_below": "data/img/PrintBed04_GRID.png",
       "printing_space": [
         250,
         210,
@@ -79,6 +82,7 @@
         -0.21
       ],
       "texture": "data/img/checker.png",
+      "texture_from_below": "data/img/checker.png",
       "printing_space": [
         200,
         200,
