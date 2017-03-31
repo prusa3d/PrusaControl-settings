@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 2.3
+    "version": 2.2
   },
   "printers": {
     "i3_mk2": {
@@ -138,14 +138,13 @@
             "nozzle_diameter": 0.25,
             "retract_length": 0.8,
             "retract_speed": 50,
-            "external_perimeter_extrusion_width": 0.25,
-            "extrusion_width": 0.25,
-            "infill_extrusion_width": 0.25,
-            "perimeter_extrusion_width": 0.25,
-            "solid_infill_extrusion_width": 0.25,
+            "external_perimeter_extrusion_width": 0.28,
+            "extrusion_width": 0.28,
+            "infill_extrusion_width": 0.28,
+            "perimeter_extrusion_width": 0.28,
+            "solid_infill_extrusion_width": 0.28,
             "first_layer_extrusion_width" : 0.25,
-            "top_infill_extrusion_width": 0.25,
-            "support_material_extrusion_width" : 0.18
+            "top_infill_extrusion_width": 0.28
           }
         },
         "0.6mm": {
