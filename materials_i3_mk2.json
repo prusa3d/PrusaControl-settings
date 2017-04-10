@@ -1,12 +1,12 @@
 {
   "info": {
-    "version": 2.3
+    "version": 2.4
   },
   "materials": {
-    "prusa pla": {
+    "prusa_pla": {
       "first": 1,
       "sort": 1,
-      "name": "pla",
+      "name": "prusa_pla",
       "label": "Prusa PLA",
       "infill": 20,
       "infillRange": [
@@ -207,12 +207,12 @@
         }
       }
     },
-    "prusa abs": {
+    "prusa_abs": {
       "first": 0,
       "sort": 2,
-      "name": "abs",
+      "name": "prusa_abs",
       "label": "Prusa ABS",
-      "infill": 25,
+      "infill": 20,
       "infillRange": [
         0,
         80
@@ -258,15 +258,6 @@
           "parameters": {
           }
         },
-        "farm grid": {
-          "first": 1,
-          "sort": 3,
-          "name": "farm grid",
-          "label": "farm grid - 0.2 mm",
-          "parameters": {
-            "fill_pattern" : "grid"
-          }
-        },
         "detail": {
           "first": 0,
           "sort": 1,
@@ -301,10 +292,10 @@
         }
       }
     },
-    "prusa pet": {
+    "prusa_pet": {
       "first": 0,
       "sort": 3,
-      "name": "pet",
+      "name": "prusa_pet",
       "label": "Prusa PET",
       "infill": 20,
       "infillRange": [
@@ -389,10 +380,10 @@
         }
       }
     },
-    "pla/pha": {
+    "pla_pha": {
       "first": 0,
       "sort": 4,
-      "name": "pla",
+      "name": "pla_pha",
       "label": "PLA/PHA",
       "infill": 20,
       "infillRange": [
@@ -593,10 +584,10 @@
         }
       }
     },
-    "pla/metals": {
+    "pla_metals": {
       "first": 0,
       "sort": 5,
-      "name": "metals",
+      "name": "pla_metals",
       "label": "ColorFabb metal composites",
       "infill": 20,
       "infillRange": [
@@ -757,10 +748,10 @@
         }
       }
     },
-    "cf woodfill": {
+    "woodfill": {
       "first": 0,
       "sort": 6,
-      "name": "cf woodfil",
+      "name": "woodfill",
       "label": "ColorFabb Woodfill",
       "infill": 20,
       "infillRange": [
@@ -924,8 +915,8 @@
     "timberfill": {
       "first": 0,
       "sort": 7,
-      "name": "cf woodfil",
-      "label": "ColorFabb Woodfill",
+      "name": "timberfill",
+      "label": "Fillamentum Timberfill",
       "infill": 20,
       "infillRange": [
         0,
@@ -1085,10 +1076,10 @@
         }
       }
     },
-    "cf xt/xt-cf20": {
+    "xt": {
       "first": 0,
       "sort": 8,
-      "name": "xt+cf",
+      "name": "xt",
       "label": "ColorFabb XT/XT-CF20",
       "infill": 20,
       "infillRange": [
@@ -1261,10 +1252,10 @@
         }
       }
     },
-    "cf ht": {
+    "ht": {
       "first": 0,
       "sort": 10,
-      "name": "cf ht",
+      "name": "ht",
       "label": "ColorFabb HT",
       "infill": 20,
       "infillRange": [
@@ -1437,10 +1428,10 @@
         }
       }
     },
-    "t bridge": {
+    "t-bridge": {
       "first": 0,
       "sort": 12,
-      "name": "t bridge",
+      "name": "t-bridge",
       "label": "Taulman Bridge",
       "infill": 20,
       "infillRange": [
@@ -1789,10 +1780,10 @@
         }
       }
     },
-    "fillamentum abs": {
+    "fillamentum_abs": {
       "first": 0,
       "sort": 16,
-      "name": "fillamentum abs",
+      "name": "fillamentum_abs",
       "label": "Fillamentum ABS",
       "infill": 20,
       "infillRange": [
@@ -1877,10 +1868,10 @@
         }
       }
     },
-    "fillamentum asa": {
+    "fillamentum_asa": {
       "first": 0,
       "sort": 17,
-      "name": "fillamentum asa",
+      "name": "fillamentum_asa",
       "label": "Fillamentum ASA",
       "infill": 20,
       "infillRange": [
