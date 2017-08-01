@@ -122,6 +122,26 @@
             "extrusion_multiplier": 1.1            
           }
         },
+        "0.8mm": {
+          "name": "0.8mm",
+          "label": "Nozzle 0.8mm",
+          "parameters": {
+            "nozzle_diameter": 0.8,
+            "layer_height": 0.3,
+            "perimeters" : 2,
+            "top_solid_layers" : 3,
+            "bottom_solid_layers": 3,
+            "external_perimeter_extrusion_width": 0.81,
+            "extrusion_width": 0.87,
+            "perimeter_extrusion_width": 0.85,
+            "infill_extrusion_width": 0.95,
+            "solid_infill_extrusion_width": 0.85,
+            "top_infill_extrusion_width": 0.80,
+            "first_layer_extrusion_width" : 0.85,
+            "infill_overlap" : "20%",
+            "extrusion_multiplier": 1.2
+          }
+        },
         "default": {
           "name": "default",
           "label": "",
