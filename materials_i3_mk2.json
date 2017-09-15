@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 2.5
+    "version": 3.0
   },
   "materials": {
     "prusa_pla": {
@@ -1272,12 +1272,12 @@
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1.3,
+            "extrusion_multiplier": 1.2,
             "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
-            "first_layer_temperature": 210,
-            "temperature": 210,
+            "first_layer_temperature": 200,
+            "temperature": 200,
             "min_fan_speed": 85,
             "max_fan_speed": 100,
             "bridge_fan_speed": 100,
@@ -1436,7 +1436,7 @@
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1.3,
+            "extrusion_multiplier": 1.2,
             "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
@@ -1455,7 +1455,7 @@
       "first": 0,
       "sort": 11,
       "name": "xt",
-      "label": "ColorFabb XT/XT-CF20",
+      "label": "ColorFabb XT",
       "infill": 20,
       "infillRange": [
         0,
@@ -1538,9 +1538,98 @@
         }
       }
     },
-    "ngen": {
+    "xt-cf20": {
       "first": 0,
       "sort": 12,
+      "name": "xt-cf20",
+      "label": "ColorFabb XT-CF20",
+      "infill": 20,
+      "infillRange": [
+        0,
+        80
+      ],
+      "quality": {
+        "detail": {
+          "first": 0,
+          "sort": 1,
+          "name": "detail",
+          "label": "Detail - 0.1 mm",
+          "parameters": {
+            "layer_height" : 0.1,
+            "top_solid_layers" : 12,
+            "bottom_solid_layers": 10,
+            "perimeters" : 3
+          }
+        },
+        "optimal": {
+          "first": 0,
+          "sort": 2,
+          "name": "optimal",
+          "label": "Optimal - 0.15 mm",
+          "parameters": {
+            "layer_height" : 0.15,
+            "top_solid_layers" : 12,
+            "bottom_solid_layers": 10,
+            "perimeters" : 3
+          }
+        },
+        "normal": {
+          "first": 1,
+          "sort": 3,
+          "name": "normal",
+          "label": "Normal - 0.2 mm",
+          "parameters": {
+          }
+        },
+        "draft": {
+          "first": 0,
+          "sort": 4,
+          "name": "draft",
+          "label": "Draft - 0.35 mm",
+          "parameters": {
+            "layer_height": 0.35,
+            "perimeters" : 2,
+            "top_solid_layers" : 4,
+            "bottom_solid_layers": 3,
+            "external_perimeter_extrusion_width": 0.7,
+            "extrusion_width": 0.7,
+            "infill_extrusion_width": 0.7,
+            "perimeter_extrusion_width": 0.7,
+            "solid_infill_extrusion_width": 0.7,
+            "solid_infill_speed": 60,
+            "top_infill_extrusion_width": 0.45,
+            "top_solid_infill_speed": 50
+          }
+        },
+        "default": {
+          "first": 0,
+          "sort": 99,
+          "name": "default",
+          "label": "",
+          "parameters": {
+            "cooling": 1,
+            "disable_fan_first_layers": 3,
+            "fan_always_on": 1,
+            "filament_diameter": 1.75,
+            "extrusion_multiplier": 1.2,
+            "slowdown_below_layer_time": 15,            
+            "first_layer_temperature": 260,
+            "first_layer_bed_temperature": 85,
+            "temperature": 260,
+            "bed_temperature": 90,
+            "max_volumetric_speed": 1,
+            "filament_max_volumetric_speed": 1,
+            "min_fan_speed": 30,
+            "max_fan_speed": 50,
+            "bridge_fan_speed": 50,
+            "fan_below_layer_time": 20
+          }
+        }
+      }
+    },
+    "ngen": {
+      "first": 0,
+      "sort": 13,
       "name": "ngen",
       "label": "ColorFabb nGen",
       "infill": 20,
@@ -1627,7 +1716,7 @@
     },
     "ht": {
       "first": 0,
-      "sort": 13,
+      "sort": 14,
       "name": "ht",
       "label": "ColorFabb HT",
       "infill": 20,
@@ -1714,9 +1803,9 @@
     },
     "cpe": {
       "first": 0,
-      "sort": 14,
+      "sort": 15,
       "name": "cpe",
-      "label": "Fillamentum CPE",
+      "label": "Fillamentum CPE HG100/HM100",
       "infill": 20,
       "infillRange": [
         0,
@@ -1761,6 +1850,7 @@
           "name": "draft",
           "label": "Draft - 0.35 mm",
           "parameters": {
+            "filament_type":"PET",
             "layer_height": 0.35,
             "perimeters" : 2,
             "top_solid_layers" : 4,
@@ -1794,6 +1884,7 @@
             "min_fan_speed": 80,
             "max_fan_speed": 80,
             "bridge_fan_speed": 50,
+            "retract_length": 1.6,
             "fan_below_layer_time": 20
           }
         }
@@ -1801,7 +1892,7 @@
     },
     "t-bridge": {
       "first": 0,
-      "sort": 15,
+      "sort": 16,
       "name": "t-bridge",
       "label": "Taulman Bridge",
       "infill": 20,
@@ -1888,7 +1979,7 @@
     },
     "t-glasse": {
       "first": 0,
-      "sort": 16,
+      "sort": 17,
       "name": "t-glasse",
       "label": "Taulman T-Glasse",
       "infill": 20,
@@ -1964,7 +2055,7 @@
             "first_layer_temperature": 240,
             "first_layer_bed_temperature": 90,
             "temperature": 240,
-            "bed_temperature": 80,
+            "bed_temperature": 90,
             "min_fan_speed": 0,
             "max_fan_speed": 0,
             "bridge_fan_speed": 50,
@@ -1975,7 +2066,7 @@
     },
     "edge": {
       "first": 0,
-      "sort": 17,
+      "sort": 18,
       "name": "edge",
       "label": "E3D Edge",
       "infill": 20,
@@ -2062,7 +2153,7 @@
     },
     "pc-abs": {
       "first": 0,
-      "sort": 18,
+      "sort": 19,
       "name": "pc-abs",
       "label": "E3D PC-ABS",
       "infill": 20,
@@ -2149,7 +2240,7 @@
     },
     "fillamentum_abs": {
       "first": 0,
-      "sort": 19,
+      "sort": 20,
       "name": "fillamentum_abs",
       "label": "Fillamentum ABS",
       "infill": 20,
@@ -2236,7 +2327,7 @@
     },
     "fillamentum_asa": {
       "first": 0,
-      "sort": 20,
+      "sort": 21,
       "name": "fillamentum_asa",
       "label": "Fillamentum ASA",
       "infill": 20,
@@ -2323,7 +2414,7 @@
     },
     "flex": {
       "first": 0,
-      "sort": 21,
+      "sort": 22,
       "name": "flex",
       "label": "Flex - Shore A85 - A98",
       "infill": 15,
@@ -2398,7 +2489,7 @@
     },
     "hips": {
       "first": 0,
-      "sort": 22,
+      "sort": 23,
       "name": "hips",
       "label": "HIPS",
       "infill": 20,
@@ -2475,8 +2566,8 @@
             "first_layer_bed_temperature": 100,
             "temperature": 220,
             "bed_temperature": 100,
-            "min_fan_speed": 100,
-            "max_fan_speed": 100,
+            "min_fan_speed": 20,
+            "max_fan_speed": 20,
             "bridge_fan_speed": 50,
             "fan_below_layer_time": 20
           }
@@ -2485,7 +2576,7 @@
     },
     "pp": {
       "first": 0,
-      "sort": 23,
+      "sort": 24,
       "name": "pp",
       "label": "Verbatim PP",
       "infill": 20,
@@ -2558,11 +2649,178 @@
         }
       }
     },
+    "pva": {
+      "first": 0,
+      "sort": 25,
+      "name": "pva",
+      "label": "Primavalue PVA",
+      "soluble": 1,
+      "infill": 20,
+      "infillRange": [
+        0,
+        80
+      ],
+      "quality": {
+        "optimal": {
+          "first": 0,
+          "sort": 2,
+          "name": "optimal",
+          "label": "Optimal - 0.15 mm",
+          "parameters": {
+            "layer_height" : 0.15,
+            "top_solid_layers" : 12,
+            "bottom_solid_layers": 10,
+            "perimeters" : 3
+          }
+        },
+        "normal": {
+          "first": 1,
+          "sort": 3,
+          "name": "normal",
+          "label": "Normal - 0.2 mm",
+          "parameters": {
+          }
+        },
+        "draft": {
+          "first": 0,
+          "sort": 4,
+          "name": "draft",
+          "label": "Draft - 0.35 mm",
+          "parameters": {
+            "layer_height": 0.35,
+            "perimeters" : 2,
+            "top_solid_layers" : 4,
+            "bottom_solid_layers": 3,
+            "external_perimeter_extrusion_width": 0.7,
+            "extrusion_width": 0.7,
+            "infill_extrusion_width": 0.7,
+            "perimeter_extrusion_width": 0.7,
+            "solid_infill_extrusion_width": 0.7,
+            "solid_infill_speed": 60,
+            "top_infill_extrusion_width": 0.45,
+            "top_solid_infill_speed": 50
+          }
+        },
+        "default": {
+          "first": 0,
+          "sort": 99,
+          "name": "default",
+          "label": "",
+          "parameters": {
+            "filament_type": "PVA",
+            "cooling": 1,
+            "disable_fan_first_layers": 3,
+            "fan_always_on": 1,
+            "filament_diameter": 1.75,
+            "extrusion_multiplier": 1,
+            "slowdown_below_layer_time": 15,            
+            "first_layer_temperature": 220,
+            "first_layer_bed_temperature": 100,
+            "temperature": 220,
+            "bed_temperature": 100,
+            "min_fan_speed": 100,
+            "max_fan_speed": 100,
+            "bridge_fan_speed": 50,
+            "fan_below_layer_time": 20
+          }
+        }
+      }
+    },
+    "bvoh": {
+      "first": 0,
+      "sort": 26,
+      "name": "bvoh",
+      "label": "Verbatim BVOH",
+      "soluble": 1,
+      "infill": 20,
+      "infillRange": [
+        0,
+        80
+      ],
+      "quality": {
+        "detail": {
+          "first": 0,
+          "sort": 1,
+          "name": "detail",
+          "label": "Detail - 0.1 mm",
+          "parameters": {
+            "layer_height" : 0.1,
+            "top_solid_layers" : 12,
+            "bottom_solid_layers": 10,
+            "perimeters" : 3
+          }
+        },
+        "optimal": {
+          "first": 0,
+          "sort": 2,
+          "name": "optimal",
+          "label": "Optimal - 0.15 mm",
+          "parameters": {
+            "layer_height" : 0.15,
+            "top_solid_layers" : 12,
+            "bottom_solid_layers": 10,
+            "perimeters" : 3
+          }
+        },
+        "normal": {
+          "first": 1,
+          "sort": 3,
+          "name": "normal",
+          "label": "Normal - 0.2 mm",
+          "parameters": {
+          }
+        },
+        "draft": {
+          "first": 0,
+          "sort": 4,
+          "name": "draft",
+          "label": "Draft - 0.35 mm",
+          "parameters": {
+            "layer_height": 0.35,
+            "perimeters" : 2,
+            "top_solid_layers" : 4,
+            "bottom_solid_layers": 3,
+            "external_perimeter_extrusion_width": 0.7,
+            "extrusion_width": 0.7,
+            "infill_extrusion_width": 0.7,
+            "perimeter_extrusion_width": 0.7,
+            "solid_infill_extrusion_width": 0.7,
+            "solid_infill_speed": 60,
+            "top_infill_extrusion_width": 0.45,
+            "top_solid_infill_speed": 50
+          }
+        },
+        "default": {
+          "first": 0,
+          "sort": 99,
+          "name": "default",
+          "label": "",
+          "parameters": {
+            "filament_type": "PLA",
+            "cooling": 1,
+            "disable_fan_first_layers": 3,
+            "fan_always_on": 1,
+            "filament_diameter": 1.75,
+            "extrusion_multiplier": 1,
+            "slowdown_below_layer_time": 25,            
+            "first_layer_temperature": 215,
+            "first_layer_bed_temperature": 55,
+            "temperature": 210,
+            "bed_temperature": 55,
+            "min_fan_speed": 85,
+            "max_fan_speed": 100,
+            "bridge_fan_speed": 100,
+            "fan_below_layer_time": 20
+          }
+        }
+      }
+    },
     "default": {
       "first": 0,
       "sort": 99,
       "name": "default",
       "label": "",
+      "soluble": 0,
       "infill": 10,
       "infillRange": [
         0,
@@ -2581,6 +2839,30 @@
             "top_solid_layers" : 6,
             "bottom_solid_layers": 5,
             "perimeters" : 2,
+
+            "extruder_colour": "#FFFF00",
+            "filament_colour": "#FF14E2",
+            "filament_notes": "",
+            "filament_soluble" : 0,
+            "wipe_tower": 0,
+            "wipe_tower_per_color_wipe": 15,
+            "wipe_tower_width": 60,
+            "wipe_tower_x": 180,
+            "wipe_tower_y": 140,
+            "clip_multipart_objects": 1,
+            "max_volumetric_speed" : 0,
+            "filament_max_volumetric_speed": 0,
+            "deretract_speed": 0,
+            "retract_before_wipe": 60,
+            "single_extruder_multi_material": 0,
+            "elefant_foot_compensation": 0,
+            "bridge_angle": 0,
+            "before_layer_gcode":";BEFORE_LAYER_CHANGE\\n;[layer_z]\\n\\n",
+            "layer_gcode": ";AFTER_LAYER_CHANGE\\n;[layer_z]",
+            "retract_before_travel": 1,
+            "retract_layer_change": 1,
+            "retract_length_toolchange": 4,
+
             "bridge_flow_ratio": 0.95,
             "brim_width" : 0,
             "complete_objects" : 0,
@@ -2613,8 +2895,8 @@
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
+            "bridge_angle": 0,
             "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
             "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
@@ -2660,7 +2942,7 @@
             "support_material_interface_speed" : "100%",
             "support_material_pattern" : "rectilinear",
             "support_material_spacing" : 2,
-            "support_material_threshold" : 40,
+            "support_material_threshold" : 45,
             "support_material_with_sheath" : 0,
             "support_material_xy_spacing" : "60%",
             "thin_walls" : 0,
