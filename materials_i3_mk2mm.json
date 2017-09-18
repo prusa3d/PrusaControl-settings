@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 3.0
+    "version": 3.1
   },
   "materials": {
     "prusa_pla": {
@@ -1990,10 +1990,10 @@
             "support_material_synchronize_layers" : 1,
             "support_material_xy_spacing" : "30%",
             "support_material_with_sheath": 1,
-            "first_layer_temperature": 220,
-            "first_layer_bed_temperature": 100,
-            "temperature": 220,
-            "bed_temperature": 100,
+            "first_layer_temperature": 195,
+            "first_layer_bed_temperature": 55,
+            "temperature": 195,
+            "bed_temperature": 55,
             "min_fan_speed": 100,
             "max_fan_speed": 100,
             "bridge_fan_speed": 50,
