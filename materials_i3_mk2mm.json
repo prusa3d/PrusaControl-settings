@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 3.1
+    "version": 3.3
   },
   "materials": {
     "prusa_pla": {
@@ -22,9 +22,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -62,19 +62,12 @@
           "label": "",
           "parameters": {
             "filament_type": "PLA",
-            "avoid_crossing_perimeters" : 0,
             "first_layer_height" : 0.2,
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
-            "perimeters" : 3,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
+            "perimeters" : 2,
             "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
             "extrusion_width" : 0.45,
@@ -84,10 +77,6 @@
             "perimeter_extrusion_width" : 0.45,
             "top_infill_extrusion_width" : 0.42,
             "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 40,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 30,
@@ -96,44 +85,16 @@
             "top_solid_infill_speed" : 20,
             "support_material_speed" : 50,
             "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
             "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
             "infill_first" : 0,
             "infill_only_where_needed" : 0,
             "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
             "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
             "thin_walls" : 0,
             "threads" : 4,
@@ -143,7 +104,6 @@
             "fan_always_on": 1,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 215,
@@ -196,8 +156,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 2
           }
         },
@@ -226,8 +186,7 @@
             "fan_below_layer_time": 20,
             "fan_always_on": 0,
             "max_fan_speed": 30,
-            "min_fan_speed": 10,
-            "slowdown_below_layer_time": 15
+            "min_fan_speed": 10
           }
         }
       }
@@ -251,9 +210,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -296,7 +255,7 @@
             "fan_always_on": 1,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "retract_length": 5,
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -328,9 +287,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -368,19 +327,12 @@
           "label": "",
           "parameters": {
             "filament_type": "PLA",
-            "avoid_crossing_perimeters" : 0,
             "first_layer_height" : 0.2,
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
-            "perimeters" : 3,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
+            "perimeters" : 2,
             "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
             "extrusion_width" : 0.45,
@@ -390,10 +342,6 @@
             "perimeter_extrusion_width" : 0.45,
             "top_infill_extrusion_width" : 0.42,
             "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 40,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 30,
@@ -402,44 +350,16 @@
             "top_solid_infill_speed" : 20,
             "support_material_speed" : 50,
             "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
             "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
             "infill_first" : 0,
             "infill_only_where_needed" : 0,
             "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
             "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
             "thin_walls" : 0,
             "threads" : 4,
@@ -449,7 +369,6 @@
             "fan_always_on": 1,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 215,
@@ -502,8 +421,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 2
           }
         },
@@ -532,8 +451,7 @@
             "fan_below_layer_time": 20,
             "fan_always_on": 0,
             "max_fan_speed": 30,
-            "min_fan_speed": 10,
-            "slowdown_below_layer_time": 15
+            "min_fan_speed": 10
           }
         }
       }
@@ -557,9 +475,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -601,8 +519,8 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
+            "retract_length": 5,
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -634,9 +552,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -674,19 +592,12 @@
           "label": "",
           "parameters": {
             "filament_type": "PLA",
-            "avoid_crossing_perimeters" : 0,
             "first_layer_height" : 0.2,
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
-            "perimeters" : 3,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
+            "perimeters" : 2,
             "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
             "extrusion_width" : 0.45,
@@ -696,10 +607,6 @@
             "perimeter_extrusion_width" : 0.45,
             "top_infill_extrusion_width" : 0.42,
             "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 40,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 30,
@@ -708,44 +615,16 @@
             "top_solid_infill_speed" : 20,
             "support_material_speed" : 50,
             "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
             "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
             "infill_first" : 0,
             "infill_only_where_needed" : 0,
             "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
             "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
             "thin_walls" : 0,
             "threads" : 4,
@@ -755,7 +634,6 @@
             "fan_always_on": 1,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 215,
@@ -781,18 +659,6 @@
         80
       ],
       "quality": {
-        "detail": {
-          "first": 0,
-          "sort": 2,
-          "name": "detail",
-          "label": "Detail - 0.1 mm",
-          "parameters": {
-            "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
-          }
-        },
         "optimal": {
           "first": 0,
           "sort": 3,
@@ -800,8 +666,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 3
           }
         },
@@ -839,19 +705,12 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
             "first_layer_height" : 0.2,
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "perimeters" : 3,
             "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
             "extrusion_width" : 0.45,
@@ -861,10 +720,6 @@
             "perimeter_extrusion_width" : 0.45,
             "top_infill_extrusion_width" : 0.42,
             "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 30,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 20,
@@ -873,44 +728,16 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 40,
             "gap_fill_speed" : 30,
-            "first_layer_speed" : "80%",
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
             "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
             "infill_first" : 0,
             "infill_only_where_needed" : 0,
             "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
             "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
             "thin_walls" : 0,
             "threads" : 4,
@@ -920,7 +747,6 @@
             "fan_always_on": 1,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1.2,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 200,
@@ -946,18 +772,6 @@
         80
       ],
       "quality": {
-        "detail": {
-          "first": 0,
-          "sort": 2,
-          "name": "detail",
-          "label": "Detail - 0.1 mm",
-          "parameters": {
-            "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
-          }
-        },
         "optimal": {
           "first": 0,
           "sort": 3,
@@ -965,8 +779,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 3
           }
         },
@@ -1004,19 +818,12 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
             "first_layer_height" : 0.2,
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "perimeters" : 3,
             "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
             "extrusion_width" : 0.45,
@@ -1026,10 +833,6 @@
             "perimeter_extrusion_width" : 0.45,
             "top_infill_extrusion_width" : 0.42,
             "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 30,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 20,
@@ -1038,44 +841,16 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 40,
             "gap_fill_speed" : 30,
-            "first_layer_speed" : "80%",
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
             "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
             "infill_every_layers" : 1,
             "infill_extruder" : 1,
             "infill_first" : 0,
             "infill_only_where_needed" : 0,
             "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
             "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
             "thin_walls" : 0,
             "threads" : 4,
@@ -1085,7 +860,6 @@
             "fan_always_on": 1,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1.2,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 190,
@@ -1118,9 +892,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1162,8 +936,7 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -1188,18 +961,6 @@
         80
       ],
       "quality": {
-        "detail": {
-          "first": 0,
-          "sort": 1,
-          "name": "detail",
-          "label": "Detail - 0.1 mm",
-          "parameters": {
-            "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
-          }
-        },
         "optimal": {
           "first": 0,
           "sort": 2,
@@ -1207,9 +968,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1250,13 +1011,11 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1.2,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1.2,            
             "first_layer_temperature": 260,
             "first_layer_bed_temperature": 85,
             "temperature": 260,
             "bed_temperature": 90,
-            "max_volumetric_speed": 1,
             "filament_max_volumetric_speed": 1,
             "min_fan_speed": 30,
             "max_fan_speed": 50,
@@ -1285,9 +1044,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1329,8 +1088,8 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
+            "retract_length": 5,
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -1362,9 +1121,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1406,8 +1165,7 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
             "first_layer_temperature": 270,
             "first_layer_bed_temperature": 105,
             "temperature": 270,
@@ -1439,9 +1197,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1484,8 +1242,7 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
             "first_layer_temperature": 260,
             "first_layer_bed_temperature": 90,
             "temperature": 260,
@@ -1511,18 +1268,6 @@
         80
       ],
       "quality": {
-        "detail": {
-          "first": 0,
-          "sort": 1,
-          "name": "detail",
-          "label": "Detail - 0.1 mm",
-          "parameters": {
-            "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
-          }
-        },
         "optimal": {
           "first": 0,
           "sort": 2,
@@ -1530,9 +1275,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1574,8 +1319,7 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
             "first_layer_temperature": 240,
             "first_layer_bed_temperature": 90,
             "temperature": 240,
@@ -1607,9 +1351,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1651,8 +1395,7 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -1684,9 +1427,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1728,8 +1471,7 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
             "first_layer_temperature": 270,
             "first_layer_bed_temperature": 100,
             "temperature": 270,
@@ -1754,18 +1496,6 @@
         80
       ],
       "quality": {
-        "detail": {
-          "first": 0,
-          "sort": 1,
-          "name": "detail",
-          "label": "Detail - 0.1 mm",
-          "parameters": {
-            "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
-          }
-        },
         "optimal": {
           "first": 0,
           "sort": 2,
@@ -1773,9 +1503,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1817,8 +1547,7 @@
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
             "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "extrusion_multiplier": 1,            
             "first_layer_temperature": 240,
             "first_layer_bed_temperature": 100,
             "temperature": 240,
@@ -1851,9 +1580,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1896,7 +1625,6 @@
             "fan_always_on": 1,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,
             "filament_soluble": 1,
             "support_material_threshold": 80,
             "support_material_contact_distance": 0,
@@ -1937,9 +1665,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1982,7 +1710,6 @@
             "fan_always_on": 0,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,
             "filament_soluble": 1,
             "support_material_threshold": 80,
             "support_material_contact_distance": 0,
@@ -2022,9 +1749,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2067,7 +1794,6 @@
             "fan_always_on": 0,
             "filament_diameter": 1.75,
             "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25, 
             "filament_soluble": 1,
             "support_material_threshold": 80,
             "support_material_contact_distance": 0,
@@ -2109,10 +1835,9 @@
             "avoid_crossing_perimeters" : 0,
             "first_layer_height" : 0.2,
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "perimeters" : 2,
-
             "filament_type": "PLA",
             "extruder_colour": "#FFFF00",
             "filament_colour": "#FF14E2",
@@ -2136,7 +1861,7 @@
             "retract_before_travel": 3,
             "retract_layer_change": 0,
             "retract_length_toolchange": 4,
-
+            "start_filament_gcode": "M900 K200",
             "bridge_flow_ratio": 0.95,
             "brim_width" : 0,
             "complete_objects" : 0,
@@ -2165,7 +1890,7 @@
             "top_solid_infill_speed" : 20,
             "support_material_speed" : 50,
             "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
+            "first_layer_speed" : "30",
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
@@ -2228,7 +1953,8 @@
             "fan_always_on" : 1,
             "filament_diameter" : 1.75,
             "extrusion_multiplier" : 1,
-            "slowdown_below_layer_time" : 25,            
+            "slowdown_below_layer_time": 10, 
+            "retract_length": 4,           
             "first_layer_bed_temperature" : 55,
             "bed_temperature" : 55,
             "first_layer_temperature" : 215,
