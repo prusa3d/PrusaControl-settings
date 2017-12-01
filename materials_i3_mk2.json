@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 3.0
+    "version": 3.3
   },
   "materials": {
     "prusa_pla": {
@@ -20,12 +20,10 @@
           "name": "ultradetail",
           "label": "Ultra detail - 0.05 mm",
           "parameters": {
-            "first_layer_height" : 0.2,
             "layer_height" : 0.05,
             "top_solid_layers" : 15,
             "bottom_solid_layers": 10,
-            "perimeters" : 4,
-            "fill_angle" : 45,
+            "perimeters" : 3,
             "fill_density" : "20%",
             "extrusion_width" : 0.30,
             "first_layer_extrusion_width" : 0.42,
@@ -42,11 +40,8 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 30,
             "gap_fill_speed" : 20,
-            "first_layer_speed" : "70%",
             "max_print_speed" : 80,
             "travel_speed" : 200,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
             "default_acceleration" : 500,
             "perimeter_acceleration" : 400,
             "bridge_acceleration": 500,
@@ -61,9 +56,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -73,9 +68,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -112,88 +107,19 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
-            "first_layer_height" : 0.2,
+            "filament_type": "PLA",
+            "start_filament_gcode": "M900 K30",
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
-            "perimeters" : 3,
-            "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
-            "extrusion_width" : 0.45,
-            "first_layer_extrusion_width" : 0.42,
-            "external_perimeter_extrusion_width" : 0.42,
-            "infill_extrusion_width" : 0.45,
-            "perimeter_extrusion_width" : 0.45,
-            "top_infill_extrusion_width" : 0.42,
-            "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
-            "perimeter_speed" : 40,
-            "small_perimeter_speed" : 20,
-            "external_perimeter_speed" : 30,
-            "infill_speed" : 60,
-            "solid_infill_speed" : 40,
-            "top_solid_infill_speed" : 20,
-            "support_material_speed" : 50,
-            "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
-            "max_print_speed" : 100,
-            "travel_speed" : 120,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
-            "infill_every_layers" : 1,
-            "infill_extruder" : 1,
-            "infill_first" : 0,
-            "infill_only_where_needed" : 0,
-            "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
-            "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
-            "thin_walls" : 0,
-            "threads" : 4,
             "xy_size_compensation" : 0,
             "cooling": 1,
+            "filament_max_volumetric_speed" : 15,
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 215,
@@ -201,8 +127,7 @@
             "min_fan_speed": 85,
             "max_fan_speed": 100,
             "bridge_fan_speed": 100,
-            "fan_below_layer_time": 100,
-            "standby_temperature_delta" : -5
+            "fan_below_layer_time": 100
           }
         }
       }
@@ -245,8 +170,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 2
           }
         },
@@ -265,9 +190,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "default": {
@@ -276,6 +201,7 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K30",
             "first_layer_temperature": 255,
             "first_layer_bed_temperature": 100,
             "temperature": 255,
@@ -286,8 +212,7 @@
             "fan_below_layer_time": 20,
             "fan_always_on": 0,
             "max_fan_speed": 30,
-            "min_fan_speed": 10,
-            "slowdown_below_layer_time": 15
+            "min_fan_speed": 10
           }
         }
       }
@@ -310,9 +235,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -322,9 +247,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -361,12 +286,11 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K45",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -396,12 +320,10 @@
           "name": "ultradetail",
           "label": "Ultra detail - 0.05 mm",
           "parameters": {
-            "first_layer_height" : 0.2,
             "layer_height" : 0.05,
             "top_solid_layers" : 15,
             "bottom_solid_layers": 10,
-            "perimeters" : 4,
-            "fill_angle" : 45,
+            "perimeters" : 3,
             "fill_density" : "20%",
             "extrusion_width" : 0.30,
             "first_layer_extrusion_width" : 0.42,
@@ -418,11 +340,8 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 30,
             "gap_fill_speed" : 20,
-            "first_layer_speed" : "70%",
             "max_print_speed" : 80,
             "travel_speed" : 200,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
             "default_acceleration" : 500,
             "perimeter_acceleration" : 400,
             "bridge_acceleration": 500,
@@ -437,9 +356,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -449,9 +368,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -488,88 +407,18 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
-            "first_layer_height" : 0.2,
+            "start_filament_gcode": "M900 K30",
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
-            "perimeters" : 3,
-            "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
-            "extrusion_width" : 0.45,
-            "first_layer_extrusion_width" : 0.42,
-            "external_perimeter_extrusion_width" : 0.42,
-            "infill_extrusion_width" : 0.45,
-            "perimeter_extrusion_width" : 0.45,
-            "top_infill_extrusion_width" : 0.42,
-            "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
-            "perimeter_speed" : 40,
-            "small_perimeter_speed" : 20,
-            "external_perimeter_speed" : 30,
-            "infill_speed" : 60,
-            "solid_infill_speed" : 40,
-            "top_solid_infill_speed" : 20,
-            "support_material_speed" : 50,
-            "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
-            "max_print_speed" : 100,
-            "travel_speed" : 120,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
-            "infill_every_layers" : 1,
-            "infill_extruder" : 1,
-            "infill_first" : 0,
-            "infill_only_where_needed" : 0,
-            "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
-            "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
-            "thin_walls" : 0,
-            "threads" : 4,
             "xy_size_compensation" : 0,
             "cooling": 1,
+            "filament_max_volumetric_speed" : 15,
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 215,
@@ -577,8 +426,7 @@
             "min_fan_speed": 85,
             "max_fan_speed": 100,
             "bridge_fan_speed": 100,
-            "fan_below_layer_time": 100,
-            "standby_temperature_delta" : -5
+            "fan_below_layer_time": 100
           }
         }
       }
@@ -621,8 +469,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 2
           }
         },
@@ -641,9 +489,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "default": {
@@ -652,6 +500,7 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K30",
             "first_layer_temperature": 255,
             "first_layer_bed_temperature": 100,
             "temperature": 255,
@@ -662,8 +511,7 @@
             "fan_below_layer_time": 20,
             "fan_always_on": 0,
             "max_fan_speed": 30,
-            "min_fan_speed": 10,
-            "slowdown_below_layer_time": 15
+            "min_fan_speed": 10
           }
         }
       }
@@ -686,9 +534,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -698,9 +546,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -737,12 +585,11 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K45",
             "cooling": 1,
+            "filament_max_volumetric_speed" : 10,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -772,12 +619,10 @@
           "name": "ultradetail",
           "label": "Ultra detail - 0.05 mm",
           "parameters": {
-            "first_layer_height" : 0.2,
             "layer_height" : 0.05,
             "top_solid_layers" : 15,
             "bottom_solid_layers": 10,
-            "perimeters" : 4,
-            "fill_angle" : 45,
+            "perimeters" : 3,
             "fill_density" : "20%",
             "extrusion_width" : 0.30,
             "first_layer_extrusion_width" : 0.42,
@@ -794,11 +639,8 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 30,
             "gap_fill_speed" : 20,
-            "first_layer_speed" : "70%",
             "max_print_speed" : 80,
             "travel_speed" : 200,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
             "default_acceleration" : 500,
             "perimeter_acceleration" : 400,
             "bridge_acceleration": 500,
@@ -813,9 +655,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -825,9 +667,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -864,88 +706,18 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
-            "first_layer_height" : 0.2,
+            "start_filament_gcode": "M900 K30",
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
-            "perimeters" : 3,
-            "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
-            "extrusion_width" : 0.45,
-            "first_layer_extrusion_width" : 0.42,
-            "external_perimeter_extrusion_width" : 0.42,
-            "infill_extrusion_width" : 0.45,
-            "perimeter_extrusion_width" : 0.45,
-            "top_infill_extrusion_width" : 0.42,
-            "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
-            "perimeter_speed" : 40,
-            "small_perimeter_speed" : 20,
-            "external_perimeter_speed" : 30,
-            "infill_speed" : 60,
-            "solid_infill_speed" : 40,
-            "top_solid_infill_speed" : 20,
-            "support_material_speed" : 50,
-            "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
-            "max_print_speed" : 100,
-            "travel_speed" : 120,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
-            "infill_every_layers" : 1,
-            "infill_extruder" : 1,
-            "infill_first" : 0,
-            "infill_only_where_needed" : 0,
-            "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
-            "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
-            "thin_walls" : 0,
-            "threads" : 4,
             "xy_size_compensation" : 0,
             "cooling": 1,
+            "filament_max_volumetric_speed" : 15,
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 215,
@@ -953,8 +725,7 @@
             "min_fan_speed": 85,
             "max_fan_speed": 100,
             "bridge_fan_speed": 100,
-            "fan_below_layer_time": 100,
-            "standby_temperature_delta" : -5
+            "fan_below_layer_time": 100
           }
         }
       }
@@ -977,8 +748,8 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
             "perimeters" : 3
           }
         },
@@ -989,8 +760,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 3
           }
         },
@@ -1028,32 +799,13 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
-            "first_layer_height" : 0.2,
+            "start_filament_gcode": "M900 K10",
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "perimeters" : 3,
-            "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
-            "extrusion_width" : 0.45,
-            "first_layer_extrusion_width" : 0.42,
-            "external_perimeter_extrusion_width" : 0.42,
-            "infill_extrusion_width" : 0.45,
-            "perimeter_extrusion_width" : 0.45,
-            "top_infill_extrusion_width" : 0.42,
-            "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 30,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 20,
@@ -1062,54 +814,13 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 40,
             "gap_fill_speed" : 30,
-            "first_layer_speed" : "80%",
-            "max_print_speed" : 100,
-            "travel_speed" : 120,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
-            "infill_every_layers" : 1,
-            "infill_extruder" : 1,
-            "infill_first" : 0,
-            "infill_only_where_needed" : 0,
-            "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
-            "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
-            "thin_walls" : 0,
-            "threads" : 4,
             "xy_size_compensation" : 0,
             "cooling": 1,
+            "filament_max_volumetric_speed" : 10,
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
             "extrusion_multiplier": 1.3,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 210,
@@ -1117,8 +828,7 @@
             "min_fan_speed": 85,
             "max_fan_speed": 100,
             "bridge_fan_speed": 100,
-            "fan_below_layer_time": 100,
-            "standby_temperature_delta" : -5
+            "fan_below_layer_time": 100
           }
         }
       }
@@ -1141,8 +851,8 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
             "perimeters" : 3
           }
         },
@@ -1153,8 +863,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 3
           }
         },
@@ -1192,32 +902,13 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
-            "first_layer_height" : 0.2,
+            "start_filament_gcode": "M900 K10",
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "perimeters" : 3,
-            "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
-            "extrusion_width" : 0.45,
-            "first_layer_extrusion_width" : 0.42,
-            "external_perimeter_extrusion_width" : 0.42,
-            "infill_extrusion_width" : 0.45,
-            "perimeter_extrusion_width" : 0.45,
-            "top_infill_extrusion_width" : 0.42,
-            "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 30,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 20,
@@ -1226,54 +917,14 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 40,
             "gap_fill_speed" : 30,
-            "first_layer_speed" : "80%",
-            "max_print_speed" : 100,
-            "travel_speed" : 120,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
-            "infill_every_layers" : 1,
-            "infill_extruder" : 1,
-            "infill_first" : 0,
-            "infill_only_where_needed" : 0,
-            "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
-            "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
-            "thin_walls" : 0,
-            "threads" : 4,
             "xy_size_compensation" : 0,
             "cooling": 1,
+            "filament_max_volumetric_speed" : 10,
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
+            "filament_max_volumetric_speed" : 10,
             "extrusion_multiplier": 1.2,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 200,
@@ -1281,8 +932,7 @@
             "min_fan_speed": 85,
             "max_fan_speed": 100,
             "bridge_fan_speed": 100,
-            "fan_below_layer_time": 100,
-            "standby_temperature_delta" : -5
+            "fan_below_layer_time": 100
           }
         }
       }
@@ -1305,8 +955,8 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
             "perimeters" : 3
           }
         },
@@ -1317,8 +967,8 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
             "perimeters" : 3
           }
         },
@@ -1356,32 +1006,13 @@
           "name": "default",
           "label": "",
           "parameters": {
-            "avoid_crossing_perimeters" : 0,
-            "first_layer_height" : 0.2,
+            "start_filament_gcode": "M900 K10",
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "perimeters" : 3,
-            "bridge_flow_ratio": 0.95,
-            "brim_width" : 0,
-            "complete_objects" : 0,
-            "dont_support_bridges" : 0,
-            "ensure_vertical_shell_thickness" : 1,
-            "external_fill_pattern" : "rectilinear",
-            "fill_angle" : 45,
             "fill_density" : "10%",
             "fill_pattern" : "cubic",
-            "extrusion_width" : 0.45,
-            "first_layer_extrusion_width" : 0.42,
-            "external_perimeter_extrusion_width" : 0.42,
-            "infill_extrusion_width" : 0.45,
-            "perimeter_extrusion_width" : 0.45,
-            "top_infill_extrusion_width" : 0.42,
-            "solid_infill_extrusion_width" : 0.45,
-            "external_perimeters_first" : 0,
-            "extra_perimeters" : 0,
-            "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
             "perimeter_speed" : 30,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 20,
@@ -1390,54 +1021,14 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 40,
             "gap_fill_speed" : 30,
-            "first_layer_speed" : "80%",
-            "max_print_speed" : 100,
-            "travel_speed" : 120,
-            "min_print_speed": 15,
-            "bridge_speed": 20,
-            "max_volumetric_speed" : 0,
-            "gcode_comments" : 1,
-            "infill_every_layers" : 1,
-            "infill_extruder" : 1,
-            "infill_first" : 0,
-            "infill_only_where_needed" : 0,
-            "infill_overlap" : "25%",
-            "interface_shells" : 0,
-            "max_volumetric_extrusion_rate_slope_negative" : 0,
-            "max_volumetric_extrusion_rate_slope_positive" : 0,
-            "min_skirt_length" : 4,
-            "notes" : "",
-            "only_retract_when_crossing_perimeters" : 0,
-            "ooze_prevention" : 0,
-            "overhangs" : 0,
-            "perimeter_extruder" : 1,
-            "post_process" : "",
-            "print_settings_id" : "",
-            "raft_layers" : 0,
-            "resolution" : 0,
-            "seam_position" : "nearest",
-            "skirt_distance" : 2,
-            "skirt_height" : 3,
-            "skirts" : 1,
-            "solid_infill_below_area" : 0,
-            "solid_infill_every_layers" : 0,
-            "solid_infill_extruder" : 1,
-            "spiral_vase" : 0,
-            "default_acceleration" : 1000,
-            "perimeter_acceleration" : 800,
-            "bridge_acceleration": 1000,
-            "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 2000,
             "support_material" : 0,
-            "thin_walls" : 0,
-            "threads" : 4,
             "xy_size_compensation" : 0,
             "cooling": 1,
+            "filament_max_volumetric_speed" : 10,
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
+            "filament_max_volumetric_speed" : 10,
             "extrusion_multiplier": 1.2,
-            "slowdown_below_layer_time": 25,            
             "first_layer_bed_temperature": 55,
             "bed_temperature": 55,
             "first_layer_temperature": 190,
@@ -1445,8 +1036,7 @@
             "min_fan_speed": 85,
             "max_fan_speed": 100,
             "bridge_fan_speed": 100,
-            "fan_below_layer_time": 100,
-            "standby_temperature_delta" : -5
+            "fan_below_layer_time": 100
           }
         }
       }
@@ -1469,9 +1059,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -1481,9 +1071,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1520,12 +1110,11 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K45",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -1556,9 +1145,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -1568,9 +1157,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1607,17 +1196,16 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K10",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
+            "filament_max_volumetric_speed" : 10,
             "extrusion_multiplier": 1.2,
-            "slowdown_below_layer_time": 15,            
             "first_layer_temperature": 260,
             "first_layer_bed_temperature": 85,
             "temperature": 260,
             "bed_temperature": 90,
-            "max_volumetric_speed": 1,
             "filament_max_volumetric_speed": 1,
             "min_fan_speed": 30,
             "max_fan_speed": 50,
@@ -1645,9 +1233,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -1657,9 +1245,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1696,12 +1284,11 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K45",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -1732,9 +1319,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -1744,9 +1331,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1783,16 +1370,16 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "filament_type":"PET",
+            "start_filament_gcode": "M900 K45",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 270,
-            "first_layer_bed_temperature": 105,
+            "first_layer_bed_temperature": 110,
             "temperature": 270,
-            "bed_temperature": 105,
+            "bed_temperature": 120,
             "min_fan_speed": 10,
             "max_fan_speed": 20,
             "bridge_fan_speed": 50,
@@ -1819,9 +1406,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -1831,9 +1418,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1850,7 +1437,6 @@
           "name": "draft",
           "label": "Draft - 0.35 mm",
           "parameters": {
-            "filament_type":"PET",
             "layer_height": 0.35,
             "perimeters" : 2,
             "top_solid_layers" : 4,
@@ -1871,12 +1457,12 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "filament_type":"PET",
+            "start_filament_gcode": "M900 K45",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 260,
             "first_layer_bed_temperature": 90,
             "temperature": 260,
@@ -1908,9 +1494,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -1920,9 +1506,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -1959,12 +1545,11 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K10",
             "cooling": 0,
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 240,
             "first_layer_bed_temperature": 90,
             "temperature": 250,
@@ -1995,9 +1580,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -2007,9 +1592,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2046,12 +1631,12 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "filament_type":"PET",
+            "start_filament_gcode": "M900 K45",
             "cooling": 0,
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 240,
             "first_layer_bed_temperature": 90,
             "temperature": 240,
@@ -2082,9 +1667,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -2094,9 +1679,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2133,12 +1718,11 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K45",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 10,
             "first_layer_temperature": 230,
             "first_layer_bed_temperature": 85,
             "temperature": 240,
@@ -2169,9 +1753,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -2181,9 +1765,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2220,16 +1804,15 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K30",
             "cooling": 0,
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 13,
             "first_layer_temperature": 270,
-            "first_layer_bed_temperature": 100,
+            "first_layer_bed_temperature": 110,
             "temperature": 270,
-            "bed_temperature": 100,
+            "bed_temperature": 120,
             "min_fan_speed": 0,
             "max_fan_speed": 0,
             "bridge_fan_speed": 50,
@@ -2256,9 +1839,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -2268,9 +1851,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2307,12 +1890,11 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K30",
             "cooling": 0,
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 13,
             "first_layer_temperature": 240,
             "first_layer_bed_temperature": 100,
             "temperature": 240,
@@ -2343,9 +1925,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -2355,9 +1937,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2394,16 +1976,15 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K30",
             "cooling": 0,
             "disable_fan_first_layers": 3,
             "fan_always_on": 0,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 13,
             "first_layer_temperature": 265,
-            "first_layer_bed_temperature": 100,
+            "first_layer_bed_temperature": 110,
             "temperature": 265,
-            "bed_temperature": 100,
+            "bed_temperature": 110,
             "min_fan_speed": 0,
             "max_fan_speed": 0,
             "bridge_fan_speed": 50,
@@ -2457,6 +2038,7 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "start_filament_gcode": "M900 K10",
             "perimeter_speed" : 15,
             "small_perimeter_speed" : 15,
             "external_perimeter_speed" : 15,
@@ -2465,13 +2047,10 @@
             "top_solid_infill_speed" : 15,
             "support_material_speed" : 15,
             "gap_fill_speed" : 20,
-            "first_layer_speed" : "70%",
-            "max_print_speed" : 100,
-            "travel_speed" : 120,
-            "min_print_speed": 15,
             "bridge_speed": 15,
             "support_material_contact_distance" : 0.5,
             "cooling": 1,
+            "filament_max_volumetric_speed" : 2.5,
             "disable_fan_first_layers": 1,
             "fan_always_on": 1,
             "min_fan_speed": 25,
@@ -2505,9 +2084,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -2517,9 +2096,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2556,12 +2135,12 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "filament_type": "HIPS",
+            "start_filament_gcode": "M900 K10",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 13,
             "first_layer_temperature": 220,
             "first_layer_bed_temperature": 100,
             "temperature": 220,
@@ -2592,9 +2171,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2631,12 +2210,12 @@
           "name": "default",
           "label": "",
           "parameters": {
+            "filament_type": "FLEX",
+            "start_filament_gcode": "M900 K10 ; Filament gcode",
             "cooling": 1,
+            "filament_max_volumetric_speed" : 5,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
             "first_layer_temperature": 220,
             "first_layer_bed_temperature": 100,
             "temperature": 220,
@@ -2668,9 +2247,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2708,12 +2287,11 @@
           "label": "",
           "parameters": {
             "filament_type": "PVA",
+            "start_filament_gcode": "M900 K10 ; Filament gcode",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 15,            
+            "filament_max_volumetric_speed" : 15,
             "first_layer_temperature": 220,
             "first_layer_bed_temperature": 100,
             "temperature": 220,
@@ -2745,9 +2323,9 @@
           "label": "Detail - 0.1 mm",
           "parameters": {
             "layer_height" : 0.1,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
           }
         },
         "optimal": {
@@ -2757,9 +2335,9 @@
           "label": "Optimal - 0.15 mm",
           "parameters": {
             "layer_height" : 0.15,
-            "top_solid_layers" : 12,
-            "bottom_solid_layers": 10,
-            "perimeters" : 3
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
           }
         },
         "normal": {
@@ -2797,12 +2375,11 @@
           "label": "",
           "parameters": {
             "filament_type": "PLA",
+            "start_filament_gcode": "M900 K10 ; Filament gcode",
             "cooling": 1,
             "disable_fan_first_layers": 3,
             "fan_always_on": 1,
-            "filament_diameter": 1.75,
-            "extrusion_multiplier": 1,
-            "slowdown_below_layer_time": 25,            
+            "filament_max_volumetric_speed" : 15,
             "first_layer_temperature": 215,
             "first_layer_bed_temperature": 55,
             "temperature": 210,
@@ -2836,10 +2413,9 @@
             "avoid_crossing_perimeters" : 0,
             "first_layer_height" : 0.2,
             "layer_height" : 0.2,
-            "top_solid_layers" : 6,
-            "bottom_solid_layers": 5,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
             "perimeters" : 2,
-
             "extruder_colour": "#FFFF00",
             "filament_colour": "#FF14E2",
             "filament_notes": "",
@@ -2853,16 +2429,17 @@
             "max_volumetric_speed" : 0,
             "filament_max_volumetric_speed": 0,
             "deretract_speed": 0,
-            "retract_before_wipe": 60,
+            "retract_before_wipe": 0,
             "single_extruder_multi_material": 0,
             "elefant_foot_compensation": 0,
             "bridge_angle": 0,
+            "start_filament_gcode": "M900 K30 ; Filament gcode",
             "before_layer_gcode":";BEFORE_LAYER_CHANGE\\n;[layer_z]\\n\\n",
             "layer_gcode": ";AFTER_LAYER_CHANGE\\n;[layer_z]",
             "retract_before_travel": 1,
             "retract_layer_change": 1,
             "retract_length_toolchange": 4,
-
+            "retract_restart_extra": 0,
             "bridge_flow_ratio": 0.95,
             "brim_width" : 0,
             "complete_objects" : 0,
@@ -2874,15 +2451,15 @@
             "fill_pattern" : "cubic",
             "extrusion_width" : 0.45,
             "first_layer_extrusion_width" : 0.42,
-            "external_perimeter_extrusion_width" : 0.45,
+            "external_perimeter_extrusion_width" : 0.42,
             "infill_extrusion_width" : 0.45,
             "perimeter_extrusion_width" : 0.45,
-            "top_infill_extrusion_width" : 0.45,
+            "top_infill_extrusion_width" : 0.42,
             "solid_infill_extrusion_width" : 0.45,
             "external_perimeters_first" : 0,
             "extra_perimeters" : 0,
             "extruder_clearance_height" : 20,
-            "extruder_clearance_radius" : 20,
+            "extruder_clearance_radius" : 20,            
             "perimeter_speed" : 40,
             "small_perimeter_speed" : 20,
             "external_perimeter_speed" : 30,
@@ -2891,7 +2468,7 @@
             "top_solid_infill_speed" : 20,
             "support_material_speed" : 50,
             "gap_fill_speed" : 40,
-            "first_layer_speed" : "70%",
+            "first_layer_speed" : "30",
             "max_print_speed" : 100,
             "travel_speed" : 120,
             "min_print_speed": 15,
@@ -2951,13 +2528,13 @@
             "cooling" : 1,
             "disable_fan_first_layers" : 1,
             "fan_always_on" : 1,
-            "filament_diameter" : 1.75,
-            "extrusion_multiplier" : 1,
-            "slowdown_below_layer_time" : 25,            
+            "filament_diameter": 1.75,
+            "extrusion_multiplier": 1,
+            "slowdown_below_layer_time": 10,            
             "first_layer_bed_temperature" : 55,
             "bed_temperature" : 55,
             "first_layer_temperature" : 215,
-            "temperature" : 205,
+            "temperature" : 210,
             "min_fan_speed" : 85,
             "max_fan_speed" : 100,
             "bridge_fan_speed" : 100,
