@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 3.4
+    "version": 3.45
   },
   "materials": {
     "prusa_pla": {
@@ -41,7 +41,6 @@
             "support_material_speed" : 30,
             "gap_fill_speed" : 20,
             "max_print_speed" : 80,
-            "travel_speed" : 200,
             "default_acceleration" : 500,
             "perimeter_acceleration" : 400,
             "bridge_acceleration": 500,
@@ -278,7 +277,6 @@
             "support_material_speed" : 30,
             "gap_fill_speed" : 20,
             "max_print_speed" : 80,
-            "travel_speed" : 200,
             "default_acceleration" : 500,
             "perimeter_acceleration" : 400,
             "bridge_acceleration": 500,
@@ -514,7 +512,6 @@
             "support_material_speed" : 30,
             "gap_fill_speed" : 20,
             "max_print_speed" : 80,
-            "travel_speed" : 200,
             "default_acceleration" : 500,
             "perimeter_acceleration" : 400,
             "bridge_acceleration": 500,
@@ -1960,7 +1957,7 @@
             "gap_fill_speed" : 40,
             "first_layer_speed" : "30",
             "max_print_speed" : 250,
-            "travel_speed" : 250,
+            "travel_speed" : 200,
             "min_print_speed": 15,
             "bridge_angle": 0,
             "bridge_speed": 30,
@@ -1995,7 +1992,7 @@
             "perimeter_acceleration" : 800,
             "bridge_acceleration": 1000,
             "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 3500,
+            "infill_acceleration" : 1500,
             "support_material" : 0,
             "support_material_angle" : 0,
             "support_material_buildplate_only" : 0,
