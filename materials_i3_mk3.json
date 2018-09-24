@@ -1,11 +1,116 @@
 {
   "info": {
-    "version": 3.45
+    "version": 3.5
   },
   "materials": {
-    "prusa_pla": {
+    "prusament_pla": {
       "first": 1,
       "sort": 1,
+      "name": "prusament_pla",
+      "label": "Prusament PLA",
+      "infill": 20,
+      "infillRange": [
+        0,
+        80
+      ],
+      "quality": {
+        "ultradetail": {
+          "first": 0,
+          "sort": 1,
+          "name": "ultradetail",
+          "label": "Ultra detail - 0.05 mm",
+          "parameters": {
+            "layer_height" : 0.05,
+            "top_solid_layers" : 15,
+            "bottom_solid_layers": 10,
+            "perimeters" : 3,
+            "fill_density" : "20%",
+            "extrusion_width" : 0.30,
+            "first_layer_extrusion_width" : 0.42,
+            "external_perimeter_extrusion_width" : 0.30,
+            "infill_extrusion_width" : 0.50,
+            "perimeter_extrusion_width" : 0.35,
+            "top_infill_extrusion_width" : 0.30,
+            "solid_infill_extrusion_width" : 0.35,
+            "perimeter_speed" : 30,
+            "small_perimeter_speed" : 10,
+            "external_perimeter_speed" : 20,
+            "infill_speed" : 30,
+            "solid_infill_speed" : 30,
+            "top_solid_infill_speed" : 15,
+            "support_material_speed" : 30,
+            "gap_fill_speed" : 20,
+            "max_print_speed" : 80,
+            "default_acceleration" : 500,
+            "perimeter_acceleration" : 400,
+            "bridge_acceleration": 500,
+            "first_layer_acceleration" : 500,
+            "infill_acceleration" : 500
+          }
+        },
+        "detail": {
+          "first": 0,
+          "sort": 2,
+          "name": "detail",
+          "label": "Detail - 0.1 mm",
+          "parameters": {
+            "layer_height" : 0.1,
+            "top_solid_layers" : 9,
+            "bottom_solid_layers": 7,
+            "perimeters" : 2
+          }
+        },
+        "optimal": {
+          "first": 1,
+          "sort": 3,
+          "name": "optimal",
+          "label": "Optimal - 0.15 mm",
+          "parameters": {
+            "layer_height" : 0.15,
+            "top_solid_layers" : 7,
+            "bottom_solid_layers": 5,
+            "perimeters" : 2
+          }
+        },
+        "fast": {
+          "first": 0,
+          "sort": 4,
+          "name": "fast",
+          "label": "Fast - 0.2 mm",
+          "parameters": {
+          }
+        },
+        "default": {
+          "first": 0,
+          "sort": 99,
+          "name": "default",
+          "label": "",
+          "parameters": {
+            "filament_type": "PLA",
+            "start_filament_gcode": "M900 K30",
+            "layer_height" : 0.2,
+            "top_solid_layers" : 5,
+            "bottom_solid_layers": 4,
+            "fill_density" : "10%",
+            "support_material" : 0,
+            "xy_size_compensation" : 0,
+            "cooling": 1,
+            "filament_max_volumetric_speed" : 15,
+            "disable_fan_first_layers": 1,
+            "fan_always_on": 1,
+            "first_layer_bed_temperature": 60,
+            "bed_temperature": 60,
+            "first_layer_temperature": 215,
+            "temperature": 215,
+            "bridge_fan_speed": 100,
+            "fan_below_layer_time": 100
+          }
+        }
+      }
+    },
+    "prusa_pla": {
+      "first": 0,
+      "sort": 2,
       "name": "prusa_pla",
       "label": "Prusa PLA",
       "infill": 20,
@@ -110,7 +215,7 @@
     },
     "prusa_abs": {
       "first": 0,
-      "sort": 2,
+      "sort": 3,
       "name": "prusa_abs",
       "label": "Prusa ABS",
       "infill": 20,
@@ -175,7 +280,7 @@
     },
     "prusa_pet": {
       "first": 0,
-      "sort": 3,
+      "sort": 4,
       "name": "prusa_pet",
       "label": "Prusa PET",
       "infill": 20,
@@ -241,7 +346,7 @@
     },
     "generic_pla": {
       "first": 0,
-      "sort": 4,
+      "sort": 5,
       "name": "prusa_pla",
       "label": "Generic PLA",
       "infill": 20,
@@ -345,7 +450,7 @@
     },
     "generic_abs": {
       "first": 0,
-      "sort": 5,
+      "sort": 6,
       "name": "generic_abs",
       "label": "Generic ABS",
       "infill": 20,
@@ -410,7 +515,7 @@
     },
     "generic_pet": {
       "first": 0,
-      "sort": 6,
+      "sort": 7,
       "name": "generic_pet",
       "label": "Generic PET",
       "infill": 20,
@@ -476,7 +581,7 @@
     },
     "pla_pha": {
       "first": 0,
-      "sort": 7,
+      "sort": 8,
       "name": "pla_pha",
       "label": "PLA/PHA",
       "infill": 20,
@@ -580,7 +685,7 @@
     },
     "pla_metals": {
       "first": 0,
-      "sort": 8,
+      "sort": 9,
       "name": "pla_metals",
       "label": "ColorFabb metal composites",
       "infill": 20,
@@ -666,7 +771,7 @@
     },
     "woodfill": {
       "first": 0,
-      "sort": 9,
+      "sort": 10,
       "name": "woodfill",
       "label": "ColorFabb Woodfill",
       "infill": 20,
@@ -753,7 +858,7 @@
     },
     "timberfill": {
       "first": 0,
-      "sort": 10,
+      "sort": 11,
       "name": "timberfill",
       "label": "Fillamentum Timberfill",
       "infill": 20,
@@ -840,7 +945,7 @@
     },
     "xt": {
       "first": 0,
-      "sort": 11,
+      "sort": 12,
       "name": "xt",
       "label": "ColorFabb XT",
       "infill": 20,
@@ -906,7 +1011,7 @@
     },
     "xt-cf20": {
       "first": 0,
-      "sort": 12,
+      "sort": 13,
       "name": "xt-cf20",
       "label": "ColorFabb XT-CF20",
       "infill": 20,
@@ -974,7 +1079,7 @@
     },
     "ngen": {
       "first": 0,
-      "sort": 13,
+      "sort": 14,
       "name": "ngen",
       "label": "ColorFabb nGen",
       "infill": 20,
@@ -1040,7 +1145,7 @@
     },
     "ht": {
       "first": 0,
-      "sort": 14,
+      "sort": 15,
       "name": "ht",
       "label": "ColorFabb HT",
       "infill": 20,
@@ -1107,7 +1212,7 @@
     },
     "cpe": {
       "first": 0,
-      "sort": 15,
+      "sort": 16,
       "name": "cpe",
       "label": "Fillamentum CPE HG100/HM100",
       "infill": 20,
@@ -1175,7 +1280,7 @@
     },
     "t-bridge": {
       "first": 0,
-      "sort": 16,
+      "sort": 17,
       "name": "t-bridge",
       "label": "Taulman Bridge",
       "infill": 20,
@@ -1241,7 +1346,7 @@
     },
     "t-glasse": {
       "first": 0,
-      "sort": 17,
+      "sort": 18,
       "name": "t-glasse",
       "label": "Taulman T-Glasse",
       "infill": 20,
@@ -1308,7 +1413,7 @@
     },
     "edge": {
       "first": 0,
-      "sort": 18,
+      "sort": 19,
       "name": "edge",
       "label": "E3D Edge",
       "infill": 20,
@@ -1374,7 +1479,7 @@
     },
     "pc-abs": {
       "first": 0,
-      "sort": 19,
+      "sort": 20,
       "name": "pc-abs",
       "label": "E3D PC-ABS",
       "infill": 20,
@@ -1440,7 +1545,7 @@
     },
     "fillamentum_abs": {
       "first": 0,
-      "sort": 20,
+      "sort": 21,
       "name": "fillamentum_abs",
       "label": "Fillamentum ABS",
       "infill": 20,
@@ -1506,7 +1611,7 @@
     },
     "fillamentum_asa": {
       "first": 0,
-      "sort": 21,
+      "sort": 22,
       "name": "fillamentum_asa",
       "label": "Fillamentum ASA",
       "infill": 20,
@@ -1572,7 +1677,7 @@
     },
     "flex": {
       "first": 0,
-      "sort": 22,
+      "sort": 23,
       "name": "flex",
       "label": "Flex - Shore A85 - A98",
       "infill": 15,
@@ -1625,7 +1730,7 @@
     },
     "hips": {
       "first": 0,
-      "sort": 23,
+      "sort": 24,
       "name": "hips",
       "label": "HIPS",
       "infill": 20,
@@ -1692,7 +1797,7 @@
     },
     "pp": {
       "first": 0,
-      "sort": 24,
+      "sort": 25,
       "name": "pp",
       "label": "Verbatim PP",
       "infill": 20,
@@ -1747,7 +1852,7 @@
     },
     "pva": {
       "first": 0,
-      "sort": 25,
+      "sort": 26,
       "name": "pva",
       "label": "Primavalue PVA",
       "soluble": 1,
@@ -1815,7 +1920,7 @@
     },
     "bvoh": {
       "first": 0,
-      "sort": 26,
+      "sort": 27,
       "name": "bvoh",
       "label": "Verbatim BVOH",
       "soluble": 1,
@@ -1903,9 +2008,11 @@
             "top_solid_layers" : 5,
             "bottom_solid_layers": 4,
             "perimeters" : 2,
+            "filament_cost": 25.4,    
+            "filament_density" : 1.24,
             "extruder_colour": "#FFFF00",
             "filament_colour": "#FF3232",
-            "filament_notes": "",
+            "filament_notes": "List of materials tested with standart PLA print settings for MK2:\\n\\nDas Filament\\nEsun PLA\\nEUMAKERS PLA\\nFiberlogy HD-PLA\\nFillamentum PLA\\nFloreon3D\\nHatchbox PLA\\nPlasty Mladeč PLA\\nPrimavalue PLA\\nProto pasta Matte Fiber\\nVerbatim PLA\\nVerbatim BVOH",
             "filament_soluble" : 0,
             "wipe_tower": 0,
             "wipe_tower_per_color_wipe": 15,
@@ -1921,13 +2028,13 @@
             "elefant_foot_compensation": 0,
             "bridge_angle": 0,
             "start_filament_gcode": "M900 K30 ; Filament gcode",
-            "before_layer_gcode":";BEFORE_LAYER_CHANGE\\n;[layer_z]\\n\\n",
+            "before_layer_gcode":";BEFORE_LAYER_CHANGE\\nG92 E0.0\\n;[layer_z]\\n\\n",
             "layer_gcode": ";AFTER_LAYER_CHANGE\\n;[layer_z]",
             "retract_before_travel": 1,
             "retract_layer_change": 1,
             "retract_length_toolchange": 4,
             "retract_restart_extra": 0,
-            "bridge_flow_ratio": 0.8,
+            "bridge_flow_ratio": 0.9,
             "brim_width" : 0,
             "complete_objects" : 0,
             "dont_support_bridges" : 0,
@@ -1948,16 +2055,16 @@
             "extruder_clearance_height" : 20,
             "extruder_clearance_radius" : 20,            
             "perimeter_speed" : 45,
-            "small_perimeter_speed" : 20,
+            "small_perimeter_speed" : 25,
             "external_perimeter_speed" : 35,
             "infill_speed" : 200,
             "solid_infill_speed" : 200,
             "top_solid_infill_speed" : 50,
             "support_material_speed" : 50,
             "gap_fill_speed" : 40,
-            "first_layer_speed" : "30",
-            "max_print_speed" : 250,
-            "travel_speed" : 200,
+            "first_layer_speed" : "20",
+            "max_print_speed" : 200,
+            "travel_speed" : 180,
             "min_print_speed": 15,
             "bridge_angle": 0,
             "bridge_speed": 30,
@@ -1992,11 +2099,11 @@
             "perimeter_acceleration" : 800,
             "bridge_acceleration": 1000,
             "first_layer_acceleration" : 1000,
-            "infill_acceleration" : 1500,
+            "infill_acceleration" : 1250,
             "support_material" : 0,
             "support_material_angle" : 0,
             "support_material_buildplate_only" : 0,
-            "support_material_contact_distance" : 0.15,
+            "support_material_contact_distance" : 0.1,
             "support_material_enforce_layers" : 0,
             "support_material_extruder" : 1,
             "support_material_extrusion_width" : 0.35,
@@ -2006,9 +2113,9 @@
             "support_material_interface_speed" : "100%",
             "support_material_pattern" : "rectilinear",
             "support_material_spacing" : 2,
-            "support_material_threshold" : 45,
+            "support_material_threshold" : 55,
             "support_material_with_sheath" : 0,
-            "support_material_xy_spacing" : "65%",
+            "support_material_xy_spacing" : "50%",
             "thin_walls" : 0,
             "threads" : 4,
             "xy_size_compensation" : 0,
